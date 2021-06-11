@@ -1,0 +1,645 @@
+No,Title,Author,Year,Type,Keywords,Process,Process overview,Type (acc. author),Type (top-down/bottom-up),Domain
+1,Subjective Knowledge Base Construction Powered By Crowdsourcing and Knowledge Base,"Xin H,Meng R,Chen L",2018,Domain specific,"Crowdsourcing, Knowledge Base Construction, Subjective Knowledge","1. Core subjective KB construction
+2. Subjective KB Enrichment
+2.1. Entity and property extraction
+2.2. Partial-order mining
+2.3. Crowdsourced instance annotation
+2.4. Knowledge base enrichment","we propose a two-staged framework for subjective knowledge base construction using hybrid knowledge from both crowd workers and existing KBs. The framework consists of core subjective KB construction and subjective KB enrichment. Firstly, we try to build a core subjective KB mined from Probase and DBpedia, where each entity has rich objective properties. Then, we populate the core subjective KB with instances extracted from DBpedia. The crowd is leverage to annotate the subjective property of the instances. In order to optimize the crowd annotation process, we formulate it as a cost-aware instance annotation problem and propose two instance annotation algorithms, i.e., adaptive instance annotation and batch-mode instance annotation algorithms. We evaluate our framework on real knowledge bases and a real crowd-sourcing platform, the experimental results verify the effectiveness of our proposed approach",Workflow,Top-down,Crowdsourcing
+2,A domain knowledge graph construction method based on Wikipedia,"Yu H, Li H, Mao D, Cai Q",2020,Domain specific,Co-word analysis; domain knowledge graph; relationship extraction; vector variance algorithm; Wikipedia,"1. Domain knowledge (from Wikipedia)
+2. Relationship extraction 
+3. Domain knowledge graph optimisation","we proposed the corresponding methods to extract classification and non-classification relationships based on the structured, semi-structured and unstructured knowledge in Wikipedia; the framework of the domain knowledge graph construction method is shown in Figure 1",Framework,Bottom-up,Food
+3,A retrospective of knowledge graphs,"Jihong YAN, Chengyu WANG, Wenliang CHENG, Ming GAO, Aoying ZHOU",2018,Methodological,"knowledge graph, knowledge base, information
+extraction, logical reasoning, graph database","0. Data source
+1. Knowledge graph building
+  1.1. Reasoning and inference
+    1.1.1. Rule learning using logical inference
+    1.1.2. Graph-based inference and learning algorithm 
+    1.1.3. Entity and relation embedding based inference
+    1.1.4. Statistical relation learning
+  1.2. Relation extraction
+    1.2.1. Relation classification (Feature-based extraction, Kernel-based extraction)
+    1.2.2. Pattern-based relation extraction
+    1.2.3. Open relation extraction
+    1.2.4. Word embedding-based relation extraction
+    1.2.5. High-order relation formation
+  1.3. Entity extraction
+     1.3.1. from semi-structured data
+     1.3.2. from unstructured data
+     1.3.3. Entity linking
+2. Knowledge graph storage and management","he framework of a KG Based on this figure, we can get an overall picture of the field, which helps us understand the relation between each component and the entire field. We discuss in detail about the process of building knowledge graphs, and survey state-of-the-art techniques for automatic knowledge graph checking and expansion via logical inferring and reasoning. We also review the issues of graph data management by introducing the knowledge data models and graph databases, especially from a NoSQL point of view.",Framework,Bottom-up,
+4,Machine Knowledge: Creation and Curation of Comprehensive Knowledge Bases,Weikum Dong LRazniewski S et al.,2020,Methodological,,"1. Knowledge integration from premium sources
+1.1. Category cleaning
+1.2. Alignment between knowledge sources
+1.3. Graph based alignment
+
+2. Entity discovery and typing
+2.1. Dictionary-based entity spotting
+2.2. Pattern-based methods
+2.3. Sequence labeling
+2.4. Word and entity embedding
+2.5. Ab-initio taxonomy construction
+
+3. Entity canonicalisation
+3.1. Entity matching
+3.2. Popularity, similarity and coherence measures
+3.3. Optimisation and learning-to-rank methods
+3.4. Other ML methods (..)
+
+4. Attributes and relationships extraction
+4.1. Pattern-based and rule-based extraction
+4.2. Extraction from semi structured contents
+4.3. Neutral extraction
+
+5. Open schema construction
+5.1. Open information extraction for predicate discovery
+5.2. Seed based discovery of properties 
+5.3. Property canonicalization
+
+6. Knowledge base curation
+6.1. KB quality assessment
+6.2. KB completeness
+6.3. Rules and constraints
+6.4. Knowledge graph embeddings
+6.5. Consistent knowledge cleaning
+6.6. KB lifecycle","The outlined design space and the highlighted options are by no means complete, but merely reflect some of the prevalent choices as of today. We will largely use this big picture as a “roadmap” for organizing material in the following chapters. However, there are further options and plenty of under explored (if not unexplored) opportunities for advancing the state of the art in knowledge harvesting",Roadmap,Bottom-up,
+5,Towards Knowledge Graph Construction using Semantic Data Mining,"Sharafeldeen D
+Algergawy A
+Konig-Ries B",2019,Domain specific,"Knowledge graph construction, Association rules, Data mining","1. Preprocessing
+1.1. Selection and cleaning
+1.2. Entity disambiguation 1.3. Formatting
+2. Processing - knowledge graph construction
+2.1. Association rules extraction
+2.2. Association rules visualisation
+3. Post processing 3.1. Linking Geonames, ORCid
+3.2. Graph deployment
+4. KG enrichment","we introduce a semantic data mining-based approach for a biodiversity knowledge graph construction. The proposed workflow, as shown in Fig. 1, has four main steps: preprocessing, processing, post-processing, and enrichment/explanation. In the following paragraphs, we illustrate the construction steps. We explain our proposed approach using a real-world dataset from the BE project linking to additional open sources of biodiversity-related information",Workflow,Bottom-up,Biodiversity
+6,An Automatic knowledge graph construction system for K-12 Education,"Chen P, Lu Y, Zheng V, Chen X, Li X",2018,Domain specific,"Knowledge Graph, Educational Concept, K-12 Education,Online Learning","1. Educational concept extraction
+1.1. Data collection (Educational Material Data)
+1.2. Data preprocessing
+1.3. Concept extraction
+2. Educational relation identification
+2.1. Relation type selection
+2.2. Data collection (teaching and learning data)
+2.3 Relation identification (among education concepts)",,Architecture,Bottom-up,Education
+7,Scalable Knowledge Graph Construction over Text using Deep Learning based Predicate Mapping,"Mehta A, Singhal A, Karlapalem K",2019,Domain specific,"Knowledge Graph, Predicate Mapping, Deep Learning, Scalability,Sentence Simplification","1. Entity Mapping 2. Sentence Simplifier
+3. Co-reference Resolution 4.Triple Extractor 5. Metadata Processing
+6. Predicate mapping","1. Entity Mapping component maps the entities in the text triples to the DBpedia entities. 2. Sentence Simplifier which simplifies sentences before triple extraction step to overcome limitations of triple extraction on complex sentences. 3. Co-reference Resolution component which finds and replaces all the expressions that refer to the same entity in the text.
+4.Triple Extractor that uses information extraction techniques to extract relation triples from text (called text triples). 5. Metadata Processing component prepares and stores the set of candidate DBpedia predicates for a given text predicate, that could possibly be the mapping. 6. Predicate Mapping component maps a text triple’s predicate to its matching predicate in DBpedia namespace.",Pipeline,Bottom-up,DBpedia
+8,AliMeKG: Domain Knowledge Graph Construction and Application in E-commerce,"Li F., Chen H., Xu G., Qiu T., Ji F., Zhang J., Chen H.",2020,Domain specific,"E-commerce, Pre-Sales Customer Service, Domain Knowledge Graph","1. Identify POI, PV and User problem from the data source
+1.1. POI (point of interest) mining
+1.1.1. Heuristic rules phrase mining
+1.1.2. POI classification
+1.1.3. Crowdsourcing training
+1.2. User problem mining
+1.2.1 Heuristic rules phrase mining
+1.2.2. Problem classification
+1.2.3. Crowdsourcing training
+1.3. CPV (category-property-value)&IPV(item-property-value) mining
+1.3.1. QA Pairing
+1.3.2. Scene Classification
+1.3.3. IPV Mining
+1.3.4. Polarity judgement
+1.3.5. IPV Normalization
+1.3.6. IPV Filtering
+2. Relation extraction
+3. Crowdsourcing
+4. POI relational knowledge","We present our knowledge mining process in Fig. 3. In general, it includes two parts:node miningandlink prediction. The Process takes as input data source, which includes chatlog, itemdetail pages and item articles, firstly extract nodes, then establish links, and finally output structured knowledge. During the process,crowdsourcing is employed as the primary way for KG quality inspection. Each sub-process, including crowdsourcing, has been automated in our production environment and is scheduled to run periodically",Process,Top-down,E-commerce
+9,Towards smart healthcare management based on knowledge graph technology,"L Huang, C Yu, Y Chi, X Qi, H Xu",2019,Domain specific,Smart healthcare management; knowledge graph;healthy diet;machine learning; knowledge service,"1. Data sources: 1.1. KB based on symptoms
+1.2. Unstructural/structural data
+2. Named entity recognition
+2.1 Entity extraction
+2.2. Property extraction
+3. Relation recognition (relation extraction)
+4. Knowledge supplement (entity relevance computation)
+5. Knowledge fusion
+5.1. Entity construction 5.2. Relation construction
+5.3. Entity alignment",This paper developed a knowledge graph construction model that can integrate heterogeneous information and improve the quality of resources available for healthcare management and showed the smart knowledge services based on the knowledge graph. The paper mainly focused on how to integrate the data from different sources and formats and organize the extracted knowledge into a good representation. The research model using machine learning and natural language processing etc. provided a better way to manage knowledge in smart healthy die,Process,Top-down,Healthcare
+10,Automatic Construction of Subject Knowledge Graph based on Educational Big Data,"Y Su, Y Zhang",2020,Domain specific,knowledge graph; normalized google distance; point mutual information; BERT-BILSTM-CRF; intelligent education,"1. Identification of core knowledge points
+2. Recognition of knowledge points 3. Knowledge point association assessment 3.1. Semantic similarity of knowledge points
+3.2. Semantic relevance of knowledge points
+4. Construction of subject KG","this paper proposes an automatic construction method of Chinese subject knowledge graph based on educational big data.
+this paper proposes a bootstrapping method for construction of subject knowledge graph. Firstly we extracts core knowledge points from the subject syllabus, and evaluates the connection between knowledge points based on educational big data, thereby complete the construction of the core subject knowledge graph. Then, based on this core knowledge graph, more new knowledge points will be identified further and merged into the subject knowledge graph, and the connections between knowledge points are evaluated. Thus the subject knowledge graph is updated through this continuous iteration until no more knowledge points and connections could be found.",Method,Bottom-up,Education
+11,Automatic knowledge base construction from scholarly documents,"RA Al-Zaidy, CL Giles",2017,Domain specific,Scholarly documents; knowledge base; taxonomy construction,"1. Document collection
+2. Parser
+2.1. PDF parse
+2.2. Lexical parser
+3. Hearst patterns
+4. Entity-relation extractor
+4.1.Syntactic based extract
+4.2. Iterative semantic learn
+5. Taxonomy graph constructor
+5.1. Modifier merge
+5.2. Simple merge
+5.3. Vertical merge","The pipeline of our system is shown in Figure 1. Given a set of documents in PDF format, the system generates a taxonomy represented as a graph. Thee system is comprised of three main modules: a parser, an entity-relation extractor, and a taxonomy graph constructor. The first module in the pipeline is the Parser. This is a syntactic parser that extracts dependency-paths to identify noun phrases. This module passes a set of parsed sentences to the next phase. The Entity-Relation Extractor and the Taxonomy Graph Constructor are described in the next two sections.",Pipeline,Bottom-up,Education
+12,Research on construction and application of TCM knowledge graph based on ancient Chinese texts,"Y Zhou, X Qi, Y Huang, F Ju",2019,Domain specific,"ancient Chinese books, knowledge graph, traditional Chinese medicine","1. Chinese text segmenting and tagging tools
+2. Automatic extraction of professional concept attributes
+3. Ontology creating and editing tool
+4. Validation settings 4.1. Characteristic rules
+4.2 Key nodes",,Framework,Top-down,Healthcare / medicine
+13,Research and application of semi-automatic construction of structured knowledge graph,"H Hu, H Yun, Y He, X Zhang, Y Yun",2019,Domain specific,Knowledge graph; Ontology; Semantic mapping; Neo4j graph database,"1. Importing data
+2. Semantic mapping
+3. Viewing the graph","This paper designs a semi-automatic knowledge graph tool, whose functional design framework is shown in Figure 2. The graph system mainly contains three functional modules: import data, semantic mapping and view graph",Framework,Bottom-up,
+15,Knowledge graph construction from multiple online encyclopedias,"T Wu, H Wang, C Li, G Qi, X Niu, M Wang, L Li, C Shi",2019,Methodological,Knowledge graph·Knowledge extraction·Knowledge linking·Semantic Web,"0. Input - online encyclopedia (OE)
+1. Knowledge extraction
+1.1. Regular extraction
+1.1.1. Infobox properties extraction
+1.1.2. Abstract extraction
+1.1.3. Category extraction
+1.1.4. Type inference 1.1.5. Others (Redirects, internal links, external links, related pages)
+1.2. Live extraction 1.2.1. Stream filtering
+1.2.2. Entity label extraction
+1.2.3. Wikipedia (OE) synchronizing
+1.2.4. Cross-lingual Transformation
+1.2.5. Entity search
+1.2.6. Seed synchronizing
+1.2.7. Entity expansion
+1.2.8. Expanded entities synchronizing
+2. Knowledge linking
+2.1. Lightweight entity matching
+2.1.1. Using entity labels
+2.1.2. Punctuation cleaning
+2.1.3. Extending Synonyms
+2.2. Semi-supervised entity matching 2.2.1. Matched pairs into generator to get frequent set of property pairs
+2.2.2. Rule constructor
+2.2.3. Matching rules applied for data to get matched properties","we have two core modules: knowledge extraction and knowledge linking. The input of our framework are different online encyclopedias (OE1,OE2, ...OEn). We first use regular extraction to extract different kinds of article contents as RDF triples, such as Infobox Properties (corresponds to infobox extraction), Abstracts (corresponds to abstract extraction), Categories (corresponds to category extraction), Entity Types (corresponds to type inference), and others. The interval of executing regular extractions is often long, because re-extracting all given online encyclopedias consumes too much network bandwidth and time. To update knowledge in time, we frequently utilize live extraction which relies on a supervised update frequency predictor based on LSTM, to find emerging entities and existing entities with updated article contents, and then extract their article contents as RDF triples. When we got the generated knowledge by knowledge extraction, we leverage lightweight entity matching strategies and a semi-supervised rule learning method to match entities and properties across online encyclopedias. Finally, all output RDF triples compose a knowledge graph. The above process can be optional repeated because regular extraction and live extraction are used together to support knowledge update.",Framework,Bottom-up,
+16,End-to-end entity resolution for big data: A survey,"V Christophides, V Efthymiou, T Palpanas",2019,Methodological,,"1. Entity collection 2. Blocking
+3. Block processing
+3.1. Block cleaning
+3.2. Comparison cleaning
+4. Entity matching
+5. Entity clustering
+6. Resolved entities",,Workflow,Bottom-up,
+17,DBkWik: extracting and integrating knowledge from thousands of Wikis,"S Hertling, H Paulheim",2020,Domain specific,Knowledge graph creation·Information extraction·Linked open data·Knowledge graph matching,"1. Dump downloader ---> MediaWiki Dumps
+2. DBpedia extraction framework---> extracted RDF
+3. Interlinking 3.1. Instance matcher
+3.2. Schema matcher
+4. Internal linking 4.1. Instance matcher
+4.2. Schema matcher
+5. Knowledge graph fusion
+6. Ontology 6.1. Domain/range
+6.2. Subclass
+7. Type
+7.1. SDType light
+7.2. Materialisation
+8. Consolidated knowledge graph","Hence, for creating the DBkWik knowledge graph, we use the same software which has been developed for generating DBpedia, i.e., the DBpedia Extraction Framework. From a high-level point of view, the DBpedia Extraction Framework takes a Wiki dump6 as input and produces a knowledge graph as output.7 In that knowledge graph, one instance is created for each Wiki page, and one triple is created for each entry in an infobox (e.g., the population or the capital of a country). Links in an infobox create a relation between two resources (e.g., a city and a country for a capital infobox link), whereas non-linked values in an infobox (e.g., numbers or dates) create a literal assertion (e.g., the population of a country)",Workflow,Bottom-up,DBpedia
+18,Domain-specific Knowledge Graph Construction,Mayank Kejriwal,2019,Methodological,,"1. Information extraction
+1.1. Named entity recognition
+1.2. Relation extraction
+1.3. Event extraction
+1.4. Web information extraction
+2. Entity resolution
+2.1 Blocking
+2.2 Similarity
+3. Knowledge graph completion
+3.1. Knowledge graph embeddings",,-,Bottom-up,
+19,Domain-Specific Knowledge Graph Construction for Semantic Analysis,Nitisha Jain,2020,Domain specific,Knowledge graphs · Ontology learning · Cultural heritage,"0. Input - art dataset
+1. Dictionary based matching
+2. Boundary corrections
+3. Silver standard wikipedia sentences
+Result - Annotated dataset - NER model",,Approach,Top-down,Art
+20,"Information extraction and knowledge graph construction from
+geoscience literature","C Wang, X Ma, J Chen, J Chen",2018,Domain specific,"Geological corpus
+Knowledge graph
+Geoscience literature
+Chinese word segmentation
+Chord and bigram graphs","1. Hybrid corpus creation
+2. Chinese word segmentation
+3. Knowledge graph construction","2.4.1. Hybrid corpus creation
+(a) Create a raw corpus derived from the geological literature in
+CNKI;
+(b) Use terms of geology dictionary and TCCGMR to match the raw
+corpus and label them using label set fB; E; M; Sg. This step introduces the professional knowledge contained in geology dictionary and TCCGMR into the raw corpus.
+(c) After the dictionary matching, unmatched words are labeled using
+label set manually to build the geological corpus.
+(d) Build the hybrid corpus by combining a generic corpus and the
+geological corpus together. In this study, the People's Daily Corpus
+released by Institute of Computational Linguistics, Perking University was selected as a generic corpus.
+2.4.2. Chinese word segmentation
+(a) Use the hybrid corpus to train the rules of word segmentation and
+build a CRF-based geological word segmentation model. The rules
+training and word segmentation were carried out based on the
+CRFþþ 0.58 toolkit.1
+(b) Use the geological word segmentation model to segment the input
+geological text document.
+2.4.3. Knowledge graph construction
+(a) Remove the stop-words from the word segmentation results by
+matching method and get the content-words. The stop-word library used in this study was an extended version of the stop-words
+of Harbin Institute of Technology.
+(b) Analyze content-words frequency in individual chapters and the
+whole report.
+(c) Select the chord and bigram graphs to visualize the content-words
+and links as nodes and edges in a knowledge graph.",Workflow,Top-down,Geography
+21,OpenIE-based approach for Knowledge Graph construction from text,"JL Martinez-Rodriguez, I López-Arévalo",2018,Methodological,"Knowledge Graph
+Semantic Web representation
+Fact extraction
+Relation Extract","0. Document acquisition 1. Preprocessing
+1.1. Sentence segmentation, part of speech, syntax tree parsing
+1.2. Filtering - word window, syntactic patterns
+2. Entity extraction and linking (EEL)
+2.1. Service invocation
+2.2. Output integration
+2.3. Filtering - overlaps, voting, deduplication
+3. Nominal Phrases (NP) association
+3.1. NP tagging
+3.2. Entity extraction
+3.3. Entity matching 3.4. Tuple creation
+4. Relation extraction (RE)
+5. Automatic SRL (semantic role labeling)
+6. Order and selection
+6.1. Entity selection 6.2. Property selection
+7. RDF preparation","This section presents the proposed method for the construction of Knowledge Graphs from text. As already mentioned, our proposed method is based on a combination of Natural Language Processing (NLP) and Information Extraction (IE) operations in order to transform an input text into RDF triples. In general, such operations involve the acquisition and preprocessing of input text; the extraction of named entities and their association with grammatical units (that help to preserve coherent units of information); the extraction of semantic relations (through an OpenIE approach) and
+their association with semantic information provided by a Semantic Role Labeling (SRL) approach that lead to identify the order and selection of elements to be finally represented through RDF triples
+
+This paper proposed an approach for constructing Knowledge Graphs on the Semantic Web through a task we coined as Relation Extraction and Linking. Our approach relies on Information Extraction (IE) tasks for obtaining named entities and relations to then link them using data and standards of the Semantic Web. Moreover, we integrated information from such IE tasks together with grammatical units of information for keeping coherence at the representation stage.",Method,Bottom-up,
+22,Real-world data medical knowledge graph: construction and applications,"L Li, P Wang, J Yan, Y Wang, S Li, J Jiang",2020,Domain specific,"real-world data
+medical knowledge graph
+CDSS
+quadruplet
+PSR","1. Data preparation
+2. Entity recognition
+3. Entity normalisation
+4. Relation extraction
+5. Property calculation
+6. Graph cleaning
+7. Related entity ranking
+8. Graph embedding",,Procedure,Bottom-up,Healthcare / medicine
+23,Developing a Product Knowledge Graph of Consumer Electronics to Manage Sustainable Product Information,Haklae Kim,2021,Domain specific,"consumer electronics; product knowledge; knowledge graph; ontology model; formal
+concept analysis","1. Data collection
+2. Extract specification groups --> build reference vocabulary
+3. Analyse formal concepts for specification groups
+4. Extract specification items --> build reference vocabulary
+5. Analyse formal concepts for specification items
+6. Concept refinement
+7. Design a knowledge model
+8. Construct a knowledge graph","The development of the product knowledge graph was divided into two steps. First, terms in the specifications were extracted and analyzed in a formalized process; then, the knowledge graph was constructed. Analyzing the technical terms involves the extraction of vocabularies from heterogeneous product specifications, definition of common vocabularies, and application of common vocabularies between products.",Process,Bottom-up,Electronics
+24,"Development of process safety knowledge graph: A Case study on
+delayed coking process","S Mao, Y Zhao, J Chen, B Wang, Y Tang",2020,Domain specific,"Process safety
+Knowledge graph
+Delayed coking process","0. Data sources
+1. Data acquisition
+1.1. Data acquisition from relational databases
+1.2. Data acquisition from documents
+2. Schema definition - ontology design
+3. Data import and storage",Using Neo4j,Process,Bottom-up,Safety / manufacturing
+25,Principles for Developing a Knowledge Graph of Interlinked Events from News Headlines on Twitter,"S Shekarpour, A Saxena, K Thirunarayan",2018,Domain specific,,"1. Data collection
+2. Data modelling
+3. Event annotation
+3.1. Event recognition
+3.2. Event classification
+4. Entity annotation
+4.1. Entity recognition
+4.2. Entity linking
+4.3. Entity labelling / Semantic role labelling
+4.4. Entity disambiguation
+4.5. Inferring Implicit Entity
+5. Event interlinking
+5.1. Evolutionary linking
+5.2. Across-media interlinking","This pipeline contains the following main steps, to be discussed in detail later. (1) Collecting tweets from the stream of several news channels such as BBC and CNN on Twitter. (2) Agreeing upon background data model. (3) Event annotation potentially contains two subtasks (i) event recognition and (ii) event classification. (4) Entity/relation annotation possibly comprises a series of tasks as (i) entity recognition, (ii) entity linking, (iii) entity disambiguation, (iv) semantic role labeling of entities and (v) inferring implicit entities. (5) Interlinking events across time and media. (6) Publishing event knowledge graph based on the best practices of Linked Open Data.",Pipeline,Top-down,Social media
+26,Accelerating Road Sign Ground Truth Construction with Knowledge Graph and Machine Learning,"JE Kim, C Henson, K Huang, TA Tran",2020,Domain specific,"Knowledge Graph, Meta-Learning, Road Sign Classification, Data Annotation, Crowd-sourcing, Human in the Loop, Autonomous Driving","Designing Road Sign ontology
+1. Road sign features
+2. Road sign conventions and prototypes
+3. Alignment with domain vocabularies
+Building road sign knowledge graph
+1. KG construction with crowdsourcing (thus people)
+1.1. Identifying road sign templates for various countries
+1.2. Road sign feature extraction
+2. Alignment of KG to domain specific KG (ML)
+2.1. Automated reasoning
+2.2. Auto-transformation for individual triples
+2.3. Manual alignment","We need to design the knowledge graph specifically to enable the recognition of road signs in different applications. However, building the knowledge graph manually is both time consuming and difficult due to lack of comprehensive domain knowledge of human annotators. In our work, we develop a two-step system: First, we rely on the crowd to construct the large-scale graphs with basic properties. Second, we align and extend the graphs to ”fine-tune” to domain-specific data and vocabularies.",Approach,Top-down,Transport
+27,"Design and Implementation of Curriculum System
+Based on Knowledge Graph","X Yu, M Stahr, H Chen, R Yan",2021,Domain specific,"Graph Database, Neo4j, Curriculum System,
+Knowledge Graph","1. Acquiring Multi-source entity knowledge
+2. Entity relationship
+3. Mapping of knowledge graph
+3.1. Data preprocessing
+3.2. Data features analysis
+3.3. Mapping of KG","According to the name and relationship of the course, building the knowledge graph of the curriculum system requires attributes and related information of the course be obtained from structured data. By acquiring and combing this
+information, the type and entity are defined. This will expand the expression, storage and query of the knowledge graph of the curriculum system, as well as the error correction problems based on the knowledge graph",Process,Bottom-up,Education
+28,COVID-19 Literature Knowledge Graph Construction and Drug Repurposing Report Generation,"Q Wang, M Li, X Wang, N Parulian, G Han, J Ma",2020,Domain specific,,"1. Data
+1.1. Scientific literature
+1.2. Biochemical ontology and existing databases
+2. Semantics
+2.1. Hierarchical spherical embedding
+2.2. Ontology enriched text embedding
+2.3. Cross-media structured semantic representation
+3. Knowledge base
+3.1 Entity/Relation/Event extraction, hypothesis ranking and evidence mining","To tackle these two challenges we propose a new framework, COVID-KG, to accelerate scientific discovery and build bridge between clinicians and biology scientists, as illustrated in Figure 2. COVID-KG starts by reading existing paper to build multimedia knowledge graphs (KGs), in which nodes are entities/concepts and edges represent relations and events involving these entities, extracted from both text and images. Given the KGs enriched with path ranking and evidence mining, COVID-KG answers natural language questions effectively.",Framework,Top-down,Healthcare / medicine
+29,A Practice of Tourism Knowledge Graph Construction based on Heterogeneous Information,"D Xiao, N Wang, J Yu, C Zhang, J Wu",2020,Domain specific,,"1. Data preparation
+1.1. Data acquisition
+1.2. Data cleaning
+1.3. Data annotation
+1.4. Data augmentation 2. Knowledge extraction of semi-structured data
+3. Knowledge extraction of unstructured data
+3.1. Entity extraction
+3.2. Relation extraction
+3.3. Entity Alignment","we crawl semi-structured and unstructured data related to Hainan Tourism from popular travel websites, and extract the structured knowledge from these two types of data in two pipelines",Method,Bottom-up,Tourism
+30,AutoKG: Constructing Virtual Knowledge Graphs from Unstructured Documents for Question Answering,"Seunghak Yu, Tianxing He, and James Glass",2020,Domain specific,,"1. Conversion (OpenIE) - generate list of entity-relation triples
+2. Encoding (BERT)
+3. Surface-entity linking","We propose a framework to automatically construct a virtual KG from unstructured documents, and during retrieval, traverse it to extract desired information from multiple documents. Given unstructured documents D = {Di}, where each document Di is a sequence of sentences {Sj}, we first create a KG by extracting a set of knowledge tuples for each sentence Sj and link similar entities via contextual embeddings.",Framework,Bottom-up,Movies
+31,A High Precision Pipeline for Financial Knowledge Graph Construction,"S Elhammadi, LVS Lakshmanan, R Ng",2020,Domain specific,,"1. Text preprocessing & cleaning
+2. Coreference resolution
+3. Named entity recognition
+4. Semantic role labeling
+5. Financial predicate dictionary filtering
+6. Appositions + coordinating conjunctions
+7. Argument validation 8. Pattern extraction
+9. Temporal argument parser
+10. Argument minimisation 11. Fact scoring","The pipeline operates at the sentence level and starts with cleaning the news articles by identifying and removing noisy text spans, then performs linguistic annotations, i.e., resolves co-references and identifies named entities. Predicate argument structures are then extracted by the SRL component and passed to the financial predicate dictionary which we built to filter out noisy extractions by the SRL. We produce additional extractions via high-precision typed patterns that are tailored to the financial domain, and by resolving appositions. We maximize the utility of the extractions by minimizing overly specific arguments by processing coordinating conjunctions and financial lexicon guided minimization. Finally, we score the predicate argument structures to reflect our confidence in their precision and conciseness.",Pipeline,Bottom-up,Finance
+32,"Architecture of Knowledge Graph
+Construction Techniques","Z Zhao, SK Han, IM So",2018,Methodological,"Knowledge graph, Knowledge acquisition,
+Knowledge fusion, Visualization, Machine learning, Linked
+Open Data","1. Data
+1.1. Structured
+1.2. Semi-structured
+1.3. Unstructured 2. Knowledge extraction (for semi-structured and unstructured data)
+2.1. Attribute extraction
+2.2. Relation extraction
+2.3. Entity extraction
+3. Knowledge fusion
+3.1. Data integration 3.2. Entity alignment
+3.3. Knowledge inference
+3.4. Ontology construction
+3.5. Quality evaluation
+4. Knowledge graph
+4.1. Knowledge retrieval
+4.2. Visual display","bottom-up approach of knowledge graph construction.
+knowledge fusion is iterative
+Knowledge construction of the bottom-up approach is an iterative update process, including knowledge acquisition, knowledge fusion, knowledge storage and retrieval. The primary sources of knowledge acquisition include structured data, semi-structured data and unstructured data. Knowledge extraction consists of entity extraction, attribute extraction and relation extraction. Knowledge fusion is an iterative process, which need to constantly construct ontology and evaluate quality of ontology. Currently, knowledge storage is usually based on NoSQL databases.",Architecture,Bottom-up,
+33,Knowledge graph for identifying hazards on construction sites: Integrating computer vision with ontology,"W Fang, L Ma, PED Love, H Luo, L Ding",2020,Domain specific,"Hazards
+Ontology
+Computer vision
+Safety
+Knowledge graph database","1. Ontology modeling 1.1. Knowledge base domain taxonomy
+1.2. Expert experience
+1.3. Safety codes
+2. Knowledge extraction
+2.1. Named entity recognition
+2.2. Attributes extraction
+2.3. Relations extraction
+3. Knowledge inference
+3.1. Graph data modeling (i.e. Neo4j)
+3.2. Data store
+3.3. Hazard query","we present the workflow for implementing our proposed knowledge graph framework, which comprises three steps:
+1.Ontology modelling: Engineering documents, historical accident reports, experts' experience, and safety codes are used to create a hazard taxonomy is constructed, which contains both the specialisation and relations between entities.
+2.Knowledge extraction: Computer vision approaches are used to automatically detect a set of entities and attributes, using the data derived from step one. In doing so, object types and their attributes(i.e., geometric, coordinates in images) are identified so that they can be stored in Neo4j for reasoning and querying. After identifying objects and their attributes, an intersection over union (IoU) is used to extract the spatial relationships between objects (i.e., within,away, or overlap) by using geometric and spatial features. Here, the relationships between objects for hazards are defined in step one using the hazard taxonomy that is established.
+3.Knowledge inference: A reasoning model for hazard identification was developed using the Neo4j database to create nodes, relationships,and their properties for modelling. The Neo4j database stores and records all types of objects, their attributes, and the relationship of objects, which were obtained from step two. Thus, hazards in the images are automatically identified by querying the created Neo4j Database",Workflow,Top-down,Safety / construction
+34,"Knowledge Graph in Smart Education: A CaseStudy of Entrepreneurship ScientificPublication Management","Y Chi, Y Qin, R Song, H Xu",2018,Domain specific,,"0.0. data schema design
+0. Semi-structured data
+1. Data extraction
+1.1. Entity extraction
+1.2. Property extraction
+2. Entity link 2.1. Entity disambiguation
+2.2. Object alignment
+3.Ontology learning
+4. Data schema
+5. KG","Building a knowledge graph is the process by which entities and properties are extracted and stored at the concept and data levels of the knowledge graph based on some automated or semi automatic methods. This paper chose scientific paper resources in the field of entrepreneurial ecosystems to build a knowledge graph; this procedure can be seen in Figure 4. First, the metadata of the scientific paper were acquired from scientific databases. Then, data extraction, entity links, and ontology learning were implemented to acquire entities, concepts, and properties. Finally, they were added to the knowledge graph",Procedure,Top-down,Education
+35,"Visualization for Knowledge Graph Based on
+Education Data","K Sun, Y Liu, Z Guo, C Wang",2016,Domain specific,visualization; education knowledge graph; web data,"1. Acquisition - raw data
+2. Data processing
+2.1. Abstract or article
+2.2. Topic mining
+2.3. Events clustering
+2.4. Entity relation extraction
+3. Display - visual layout
+3.1. Topological structure layout
+3.2. Timeline layout
+3.3.Path tracing layout
+3.4. Word-cloud, detail layout
+4. Interaction - visual display","Just as shown in Fig. 1, various educational data are extracted from web including the network public opinion information. Then, the raw data are processed from many aspects and various visual layout methods are presented to display them. Finally, friendly man-machine interaction ensures that users can explore the hidden information conveniently",Process,Bottom-up,Education
+36,"Richpedia: A Large-Scale, Comprehensive Multi-Modal Knowledge Graph","M Wang, H Wang, G Qi, Q Zheng",2020,Domain specific,Knowledge graph Multi-modal Wikidata Ontology,"1. Data collection 1.1. Entity IRI creation
+1.2. Triple generation
+2. Image processing
+2.1. Diversity image retrieval
+2.2.Clustering
+3. Relation discovery",A knowledge graph (KG) can often be viewed as a large-scale multi-relational graph consisting of different entities and their relations. We follow the RDF model [15],Pipeline,Bottom-up,Multimedia
+37,A knowledge graph-based approach for exploring railway operational accidents,"J Liu, F Schmid, K Li, W Zheng",2021,Domain specific,Network analysis Topological analysis Knowledge graph Accident analysis Railway operational accident,"1 Identification of knowledge entities
+2. Identification of the link between knowledge entities
+3. Construction of KG","To explore railway operational accidents using a knowledge graph- based topological analysis, a ROAKG must be constructed. A knowledge graph consists of knowledge entities and their relationships [59]. To construct the ROAKG, identifying knowledge entities and their relationships, and mapping them into a network graph are three primary works.",Workflow,Bottom-up,Transport
+38,Automated domain-specific healthcare knowledge graph curation framework: Subarachnoid hemorrhage as phenotype,"KM Malik, M Krishnamurthy, M Alobaidi",2020,Domain specific,Knowledge Graph Ontology Electronic Health Records Intracranial Aneurysm Association Rules Ensemble Learning Subarachnoid Hemorrhage Stroke,"0. Data - structured/unstructured
+1. Semantic knowledge layer
+1.1. Text processing
+1.1.1. Sentence detection
+1.1.2. Lemmatization
+1.1.3. POS tagger
+1.1.4. Tokenization
+1.2. Concept extraction
+1.3. Semantic enrichment
+1.3.1. Demantic type extraction
+1.3.2. Definition extraction
+1.3.3. Synonym extractor
+1.4. Relation factory
+4.1. Taxonomic relationship extraction
+4.2. Non-taxonomic relationship extraction
+2. Statistical knowledge layer
+2.1. 1st order features - frequency
+2.2. 2nd order features - probabilities
+2.3. 3rd order features - ratios
+3. Knowledge factory layer - Knowledge representation 3.1. Resource generator
+3.2. Property generator
+4. Predictive knowledge layer
+4.1. Association rules - apriori
+4.2. Production rules - ensemble learning","The proposed knowledge graph contains relationships to represent following types of knowledge: graph of each cohort (group of patients with same statistical characteristics) showing concepts and relationships at semantic layer, inferential (statistical) knowledge derived from graph of cohorts at statistical layer, and predictive knowledge at predictive layer. The semantic layer of ASKG constructs fourteen (14) cohorts (in form of subgraph) based on aneurysmal arterial location (see Table 1 for arterial locations). In order to use semantic knowledge, the applications consuming knowledge graph would be requiring various statistical measures such as risk ratio and odd ratio of sub-cohort (e.g., Caucasian patients having aneurysm on middle cerebral arterial location). Similarly, for any application to consume predictive knowledge, it is important to see the statistical confidence such as accuracy/precision/recall of model, that was used to generate this predictive knowledge. Therefore, statistical layer encodes inferential knowledge of both semantic and predictive knowledge",Architecture,Bottom-up,Healthcare
+39,A novel knowledge graph-based optimization approach for resource allocation in discrete manufacturing workshops,"B Zhou, J Bao, J Li, Y Lu, T Liu, Q Zhang",2021,Domain specific,Discrete manufacturing Knowledge graph Ontology Mixed-model production Resource allocation Community-based device,"1. Data acquisition 2. Knowledge fusion 2.1. Data structured processing 2.2. Entity linking
+3. Knowledge modeling and representation
+3.1. Ontology modeling
+3.2. Distributed representation
+4. Knowledge storage
+4.1. RDBMS
+4.2. Graph DBMS
+5. Knowledge processing
+5.1. Distributed representation learning 5.2. Knowledge inference (with update)","To transform a large number of semi-structured and unstructured data of production workshops into structured knowledge, the framework for construction the WRKG is designed to integrate workshop de-vice resources as shown in Fig. 2. It consists of three parts. Firstly, the historical data, process document data and real-time process data of workshop manufacturing are obtained. Secondly, the knowledge fusion processing of manufacturing-related information is carried out, and the ontology model of machining knowledge is established. The entity and relationship of workshop resources are stored in a graph database. Then the reasoning method supported by the ontology rules and distributed representation learning is used to identify the implicit relationship in-formation related to the devices used in the machining workshop. Finally, both the information among implicit relationships and the in-formation of knowledge application is fed back to the data acquisition end to update the relationship among the workshop resources dynamically",Framework,Bottom-up,Manufacturing
+40,Generating knowledge graphs by employing Natural Language Processing and Machine Learning techniques within the scholarly domain,"D Dessì, F Osborne, DR Recupero, D Buscaldi",2021,Domain specific,,"1. Extraction of entities and triples
+2. Entity refining
+3. Triple refining (relations finder and mapper)
+4. Triple selection","In short, our framework includes the following steps:
+1.Extraction of entities and triples, which exploits an ensemble of several NLP and machine learning tools to extract triples from text.
+2.Entity refining, in which the resulting entities are merged and cleaned up.
+3.Triple refining,in which the triples extracted by the different tools are merged together and the relations are mapped to a common vocabulary.
+4.Triple selection, in which we select the set of ‘‘trusted’’triples that will be included in the output by first creating a smaller knowledge graph composed by triples associated with a good number of papers and then enriching this set.with other semantically consistent triples.",Workflow,Bottom-up,Education
+41,An automatic literature knowledge graph and reasoning network modeling framework based on ontology and natural language processing,"H Chen, X Luo",2019,Domain specific,"Representation ontology, natural language processing, knowledge graph, knowledge reasoning","1. Ontology modeling
+1.1. Classifier of sentences
+2. Knowledge graph 2.1. Elements extraction
+3. Reasoning network","Different from the citation and reference data, the abstract essentially is plain text data, with no consistent and standard format. Therefore, a four-elements composed ontology model is designed to represent the knowledge embedded in the abstract. In the proposed framework, the abstract is considered to be composed of sentences. Based on the designed four elements ontology model, each sentence can be assigned to one of the four elements in the ontology model. By identifying the background, objectives, solutions and findings, the content of abstract data can be expanded into four knowledge domains. For each knowledge domain, an independent network of knowledge topics can be established through correlation analysis. Those networks can be connected according to the causal relationship among these four elements. Four reasoning paths can be established to generate a knowledge reasoning network. The overall framework has three levels as shown in Fig.1. First,at the ontology modeling level, the abstract data is expanded into four independent domains; second, at the knowledge graph level, the network of knowledge topics are generated for each knowledge domain; finally, at the reasoning network level, the knowledge reasoning network is built according to the causal relationship among the four elements of the ontology model.",Framework,Top-down,Literature
+42,"Open Information Extraction
+for Knowledge Graph Construction","I Muhammad, A Kearney, C Gamble, F Coenen",2020,Domain specific,"Open information extraction · Literature knowledge graph
+construction","0. Input - document
+1. Triple extraction
+2. Triple filtering
+3. Concept linking to UMLS
+ 4. Merging of nodes and knowledge graph population",,Approach,Bottom-up,Literature
+43,"Preliminary Study on the Knowledge Graph
+Construction of Chinese Ancient History and Culture","S Liu, H Yang, J Li, S Kolmanič",2020,Domain specific,"knowledge graph; ancient history and culture; knowledge extraction; named entity
+recognition; visual display","1. Data acquisition
+2. Knowledge extraction 2.1.Entity extraction
+2.2. Relation extraction
+2.3. Attribute extraction 3. Data integration
+4. Knowledge representation
+5. Knowledge fusion
+5.1. Attribute correction
+5.2. Entity alignment
+5.3. Ontology construction
+6. Quality evaluation
+7. Knowledge update","Many researchers have divided the construction process into several parts in the process of constructing the knowledge graph. Yang Siluo et al. divided the knowledge graph construction process into eight parts, which are sample data collection, sample data cleaning, knowledge unit selection, unit relationship construction, data standardization, sample data simplification, knowledge visualization, and results interpretation [38]. Katy Borner et al. divided it into six steps: extract data, define analysis units, select methods, calculate similarity, build knowledge units, and analyze results [39]. Although the process of constructing the knowledge graph is slightly different, they all mention the most important parts in the construction of the knowledge graph: data acquisition, information extraction, knowledge fusion, and graph construction. Figure 1 shows a flowchart of the construction of the graph of our Chinese ancient history and culture",Framework,Bottom-up,History
+44,"Research on the Construction of a Knowledge Graph and
+Knowledge Reasoning Model in the Field of Urban Traffic","J Tan, Q Qiu, W Guo, T Li",2021,Domain specific,urban traffic; domain knowledge graph; ontology; knowledge reasoning,"1. Data extraction
+2. Ontology construction 
+3. Knowledge graph storage
+4. Knowledge reasoning
+5. Quality evaluation
+6. Application","The construction process of a knowledge graph is essentially a process of obtaining the required data and organizing said data into a whole in an appropriate form and method. The construction process of a knowledge graph is an iterative update process. First, it is necessary to rely on crawler technology to collect open traffic field data and to extract entities, attributes, and relationships from it. Second, the pattern layer of a knowledge graph is designed and completed, that is, the traffic field ontology is constructed. Then, the data layer of a knowledge graph is stored in the graph database. After that, knowledge reasoning is performed based on the existing data in a knowledge graph,carrying out quality evaluation of the inference results (such as contradiction and redundancy checks), thereby expanding and enriching a knowledge graph.",Framework,Top-down,Transport
+45,"Knowledge Graph Construction
+of Personal Relationships","Y Jin, Q Jin, X Yang",2020,Domain specific,"Knowledge graph · Personal relationships · Entity
+recognition · Relation extraction · Entity alignment.","0. Text - structured/unstructured
+1. Person recognition
+2. Relation extraction 3. Entity alignment 4. Data fusion
+5. Manual proofreading
+6. Entity and relation table import to Neo4j graph DB
+6. Relation visualisation","This figure illustrates that Chinese personal relationships begins from word segmentation, followed by person entity recognition, relation extraction, person entity alignment, and data fusion with manual proofreading. Lastly, all data are integrated into graph database that is used for further application such as graph visualization, search engine, or other relation analysis.",Process,Bottom-up,Society
+46,"Knowledge Graph Construction and Applications for
+Web Search and Beyond","P Wang, H Jiang, J Xu, Q Zhang",2019,Domain specific,Knowledge graph; Search engine; Question answering,"data preparation
+0.Input data 1. Extraction 1.1. Structured data extraction
+1.2. Free text extraction
+2. Normalisation to RDF data
+knowledge graph construction
+3. Merging
+4. KG Storage
+5. Inference
+6. Adapting 7. Manual editing 8. Query engine","The data of Sogou knowledge graph are collected from various websites which allow their data to be downloaded or crawled, e.g., Wikipedia and SogouBaike. The extracted data are stored in a distributed database in the form of JSON-LD (JavaScript Object Notation for Linked Data) which is a commonly used concrete RDF syntax. As an additional way to supply data, we introduce inference model which infers new relationships between entities. To search and browse the knowledge graph, a SPARQL query engine is developed that provides RESTful APIs services. For supporting a search engine’s products like question answering and recommendation, the knowledge graph data are processed to adapt to the data form of specific tasks",Framework,Bottom-up,Web search
+47,"Cn-MAKG: China Meteorology and Agriculture
+Knowledge Graph Construction Based on Semistructured Data","Q Chenglin, S Qing, Z Pengzhou",2018,Domain specific,"meteorology and agriculture; knowledge graph;
+schema; semi-structured data; data processing; knowledge storage;","0. Schema design
+1. Knowledge acquisition
+2. Data preprocessing (error data correction, data normalisation, text description quantification, quantitative conclusions standardisation)
+3. Knowledge storage - Neo4j","For the sake of constructing a high quality, stable and continuously updated knowledge graph, knowledge calculation and further processing are very important. This work includes evaluation of knowledge graph, implicit information supplement by knowledge reasoning and the update of knowledge graph. Our knowledge graph Cn-MAKG in this paper is based on semi-structured, so the technologies we have involved include schema design, knowledge acquisition, data preprocessing and knowledge storage",Technologies,Top-down,Meteorology
+48,"Knowledge Graph Construction Based on Judicial
+Data with Social Media","H Lian, Z Qin, T He, B Luo",2017,Domain specific,"referee document, social network media,
+knowledge graph, relations of entities","1. Information extraction
+1.1. Entity extraction
+1.2. Attribute extraction
+1.3. Relation extraction
+2. Knowledge fusion 2.1. Entity linking
+2.1.1. Conference resolution
+2.1.2.Entity disambiguation
+2.1.3. Knowledge merging
+3. Knowledge processing
+3.1. Ontology extraction/construction
+3.2. Knowledge inference/reasoning
+3.3. Quality evaluation","Through knowledge graph, we can realize the entity linking about physical network of social media and the referee document to form overlay network layer based on judicial data, which can accumulate the data in the Internetand be exploited by knowledge. In this paper, the bottom-up construction method of knowledge graph is used to extract patterns from public data. After manual examination, the new patterns are added to previous base. According to the process of knowledge acquisition, we divide it into three levels[2], entity extraction, knowledge fusion and knowledge processing",Process,Bottom-up,Social media
+49,"Research on Optimization of Knowledge Graph
+Construction Flow Chart","F Li, W Xie, X Wang, Z Fan",2020,Methodological,knowledge graph; Construction principle; Flowchart of construction; Optimization research,"1. Information extraction
+1.1. Entity extraction
+1.2. Attribute extraction
+1.3. Relation extraction
+2. Knowledge fusion 2.1. Conference resolution
+2.2.Entity disambiguation
+3. Knowledge processing
+3.1. Ontology extraction
+3.3. Quality evaluation
+4. Knowledge representation
+5. Knowledge storage
+6. Knowledge base","According to the principle of knowledge graph construction, aiming at the problems existing in the current flow chart o f knowledge graph construction, this paper puts forward an improved scheme to distinguish different construction patterns.",Flow chart,Bottom-up,
+50,Review of Development and Construction of Uyghur Knowledge Graph,"L Qiu, H Zhang",2017,Domain specific,"Uyghur knowledge graph construction;
+knowledge extraction; knowledge fusion; semantic
+disambiguation","1. Knowledge extraction
+1.1. Entity extraction
+1.2. Attribute extraction
+1.3. Relation extraction
+2. Knowledge fusion 2.1. Entity alignment
+2.2. Ontology construction
+3. Knowledge update","To create a Uyghur knowledge graph, the first step is to establish the architecture of Uyghur knowledge graph. Combined with this paper has analyzed and summarized the main structural features and word-formation rules of Uyghur new words, to determine the sources of knowledge data, then to research and explore the automatic extraction method for new entity knowledge vocabulary. Extracting pattern information from structured data, through knowledge fusion, using semantic disambiguation technology which suitable for Uyghur characters to disambiguate the extracted entities. And then constructing ontology, through the quality assessment and knowledge update to complete the Uyghur
+knowledge graph.",Process,Bottom-up,
+51,How to build a knowledge graph (book section),Fensel et al.,2020,Methodological,,"1. Knowledge creation
+1.1. Manual editing
+1.2. Semi-automatic editing
+1.3. Mapping
+1.4. Automatic annotation
+2. Knowledge hosting
+3. Knowledge curation
+3.1. Knowledge assessment
+3.1.1. Evaluation
+3.1.2. Correctness
+3.1.3. Completeness
+3.2. Knowledge cleaning
+3.2.1. Error detection
+3.2.2. Error correction
+3.3. Knowledge enrichment
+3.3.1. Knowledge source detection
+3.3.2. Knowledge source integration
+3.3.3. Duplicate detection
+3.3.4. Property-value-statement correction
+4. Knowledge deployment",,Process,Bottom-up,
+52,"Open Industrial Knowledge Graph Development for Intelligent Manufacturing
+Service Matchmaking","Y Zhao, Q Liu, W Xu",2017,Domain specific,"industrial knowledge graph;manufacturing servicematchmaking; intelligent manufacturing","- Standard data model reuse
+- Model merging
+- Schema mapping
+- Domain knowledge learning
+- Knowledge discovery
+- Machine learning
+- Human experts verifying
+- Knowledge assessment - Knowledge adjusting
+- Application feedback
+- Knowledge evaluation
+- Knowledge updating","In this section, we introduce a collaborative development environment to construct the industrial knowledge graph for manufacturing service matching. In this development environment, three traditional methods are utilized for different types of data sources.The collaborative development includes four aspects, as shown on Figure 1, which are standard data model reuse, domain knowledge learning, human expert verifying and application feedback.",Aspects,Top-down,Manufacturing
+53,AgriKG: an agricultural knowledge graph and its applications,"Y Chen, J Kuang, D Cheng, J Zheng, M Gao",2019,Domain specific,,"1. Data crawler
+2. Knowledge extractor
+2.1. Entity recognition
+2.2. Relation extraction
+2.3. Attribute finding
+3. NLP module
+3.1. Word segmentation
+3.2. POS tagging
+3.3 Word embedding, etc
+4. Application 4.1. Agricultural entity retrieval
+4.2. Agricultural Question answering","As illustrated in Fig. 1, AgriKG consists of five key components: (i) crawlers
+collect the raw text and semi-structured data from Web; (ii) NLP module is a
+key component which provides a set of tools for the raw text understanding; (iii)
+entity recognition identifies the agricultural entities from the raw text; (iv) relation extraction aims at finding the attributes of entities and extracting relations
+from the raw text; (v) the applications of AgriKG include agricultural entity
+retrieval and question answering, etc",Framework,Bottom-up,Agriculture
+54,"AI-KG: An Automatically Generated
+Knowledge Graph of Artificial Intelligence","D Dessì, F Osborne, DR Recupero, D Buscaldi… -",2020,Domain specific,"Artificial Intelligence · Scholarly data · Knowledge
+graph · Information Extraction · Natural Language Processing","0. Data source - papers
+1. Extractors
+2. Entities handler
+3. Relations handler
+4. Triples selector","This section illustrates the pipeline for extracting entities and relationships from research papers and generating AI-KG. Figure 1 shows the architecture of the pipeline. This approach first detects sub-strings that refer to research entities, links them by using both pre-defined and verb-based relations, and generates three disjoint sets of triples. Then, it applies NLP techniques to remove too generic entities (e.g., “approach”, “algorithm”) and cleans unusual characters (e.g., hyphens used in text to start a new row). Finally, it merges together triples that have the same subject and object and uses a manually crafted dictionary to generate their relationships.",Pipeline,Bottom-up,Technology
+55,"Development of Knowledge Graph for University Courses
+Management","I Aliyu, AFD Kana, S Aliyu",2020,Domain specific,"Course allocation, Knowledge graph, Resource Description Framework (RDF)","0. Structured data
+1. Entity extraction
+2. Relation extraction & triple formation 
+3. User interface
+4. Data schema","Fig.3. illustrates the architecture of the system that builds courses knowledge graph. The two main modules are Entity extraction, and Relation extraction. In this work, instances of entities are extracted from database since list of courses and lecturers of a department are usually stored in database. Relationships between courses and lecturers are established in an adhoc manner during allocation of courses at the beginning of every semester or academic year. Because of this, we create a Graphical User Interface (GUI) for user to specify such relationships",Architecture,Top-down,Education
+56,Intelligent Development Environment and Software Knowledge Graph,"ZQ Lin, B Xie, YZ Zou, JF Zhao, XD Li, J Wei",2017,Domain specific,"intelligent development environment, software big data, software knowledge graph, semantic search","0. Data (big data)
+1. Data parsing framework
+2. Knowledge extraction
+3. Knowledge access management
+4. Storage and query","In this subsection, we describe the software knowledge graph construction platform we have implemented in IntelliDE at the present stage. Currently, we focus on constructing a software knowledge graph for a given software project. Fig.2 shows a logical overview of this platform.",Overview,Bottom-up,Technology
+57,"KnowIME: A System to Construct a KnowledgeGraph for Intelligent Manufacturing Equipment","H Yan, J Yang, J Wan",2020,Domain specific,"Intelligent manufacturing equipment, knowledge graph, Neo4j, CRF, syntactic analysis","IME entity extraction
+1. Raw production data
+2. Data fusion 
+3. Data processing
+4. Use CRF algorithm
+
+IME relation recognition
+5. Extracted equipment concepts
+6. The text data included relations between concepts
+7. Statistical model and NLP
+8. To recognise significant relation for IME
+
+Knowledge graph for IME","As shown in Fig. 2, the proposed intelligent manufacturing equipment information system mainly includes two aspects,namely, entity extraction in the field of manufacturing equipment, and relationship extraction between entities in the equipment domain. Specifically, the data preparation phase is about obtaining data and cleaning data. Then, the operation of constructing the knowledge unit mainly includes the named entity information in the text and the relationship extraction between the unit entities. Structured display is the visualization process between the extracted entities and relationships using data visualization technology. And in the end, the shortest path algorithm is used to calculate the closest distance of the graph node to recommend relevant device information and provide the search service for users.",Process,Bottom-up,Manufacturing
+59,"A Survey of Techniques for Constructing Chinese
+Knowledge Graphs and Their Applications","T Wu, G Qi, C Li, M Wang",2018,Methodological,knowledge graph; intelligent applications; OBOR,"1. Structured, semi-structured and unstructured data
+2. Extraction
+2.1. Crawling
+2.2.Parsing
+2.3. Fact Extraction
+3. Integration
+3.1. Knowledge linking
+3.2. Knowledge fusion
+4. Quality improvement
+4.1. Knowledge completion
+4.2. Knowledge correction
+5. Update
+5.1. Active update
+5.2. Periodic update","In this section, we focus on introducing the techniques already used in constructing real-world Chinese knowledge graphs. We summarize a general framework of these techniques which is shown in Figure 5. This framework contains four stages: knowledge extraction, knowledge integration, knowledge quality improvement and knowledge update",Framework,Bottom-up,
